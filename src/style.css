@@ -1,0 +1,16 @@
+img{
+    max-width:100px;
+    display: block;
+}
+.li{
+    color: blueviolet;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    gap: 20px;
+    text-align: center;
+}

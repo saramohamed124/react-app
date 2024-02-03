@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './style.css'
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Header from './Header';
 
+// version 18
+
+// creatRoot => make root in index.html
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+//  ReactDOM.render وصلت في الاخر ل
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <div><App /><Header /></div>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// another version
+// ReactDOM.render(<div>H</div>,document.getElementById("root"))
